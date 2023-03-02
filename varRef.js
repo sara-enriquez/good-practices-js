@@ -3,7 +3,8 @@ var a = 1;
 var b = 2;
 
 //good
-
+let a = 1;
+let b = 2;
 
 
 // bad
@@ -13,7 +14,10 @@ if (true) {
 }
 
 //good
-
+let count = 1;
+if (true) {
+  count += 1;
+}
 
 // bad
 const myFunc = ()=>{

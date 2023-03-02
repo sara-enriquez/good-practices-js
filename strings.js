@@ -4,10 +4,11 @@ function sayHi(name) {
 }
 
 //good
-
+const sayHi = (name) => {
+    return `How are you, ${name}?`;
+}
 
 //bad
 const name = "Capt. Janeway";
 
 //good
-

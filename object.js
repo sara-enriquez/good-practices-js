@@ -2,7 +2,7 @@
 const item = new Object();
 
 //good
-
+const item = {};
 
 //bad 
 const test = 'test';
@@ -39,13 +39,17 @@ const bad = {
 };
 
 //good
-
+const bad = {
+    foo: 3,
+    bar: 4,
+    dataBlah: 5
+};
 
 // bad
 const items = new Array();
 
 // good
-
+const items = [];
 
 //bad 
 const list = [];
@@ -53,7 +57,8 @@ const list = [];
 list[0] = 'add new element to list';
 
 //good
-
+const list = [];
+list.push('add new element to list');
 
 //bad copy
 const len = items.length;
@@ -65,6 +70,12 @@ for (i = 0; i < len; i += 1) {
 }
 
 //good
+const len = items.length;
+const itemsCopy = [];
+
+for (let i = 0; i < len.length; i + 1) {
+  itemsCopy = len[i];
+}
 
 
 
